@@ -31,7 +31,7 @@ public class StudentController {
         return ResponseEntity.ok(students);
     }
 
-    @GetMapping("/JUJAJAJA")
+    @GetMapping("/Mizuhara")
     public ResponseEntity<String> getUser(Principal principal) {
         if (principal == null) {
             throw new IllegalArgumentException("No hay principal?");
