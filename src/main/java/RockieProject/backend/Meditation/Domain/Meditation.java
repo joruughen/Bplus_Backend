@@ -1,7 +1,7 @@
 package RockieProject.backend.Meditation.Domain;
 
 import RockieProject.backend.Student.Domain.Student;
-import RockieProject.backend.StudySession.Domain.Status;
+import RockieProject.backend.Meditation.Domain.Status;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,7 +21,7 @@ public class Meditation {
     private int meditation_time; //Minutes
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private Status status; // Asegúrate de que este sea el enum correcto
 
     @ManyToOne
     @JsonBackReference
